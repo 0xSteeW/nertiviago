@@ -2,10 +2,10 @@ package nertiviago
 
 type State struct {
 	CustomStatuses [][]string `json:"customStatusArr"`
-	DMs	[]string	`json:"dms"`
-	MemberStatuses [][]string `json:"memberStatusArr"`
+	dms	[]string	`json:"dms"`
+	memberStatuses [][]string `json:"memberStatusArr"`
 	LoginResponse string `json:"message"`
-	MutedChannels []ChannelEvent `json:"mutedChannels"`
+	mutedChannels []ChannelEvent `json:"mutedChannels"`
 	Notifications []notification
 	ProgramActivities []programActivity `json:"programActivityArr"`
 	ServerMembers []serverMember `json:"serverMembers"`
@@ -16,7 +16,7 @@ type State struct {
 
 type settings struct {
 	GDriveLinked bool `json:"GDriveLinked"`	
-	CustomEmojis []string `json:"customEmojis"`
+	customEmojis []string `json:"customEmojis"`
 }
 
 type notification struct {
